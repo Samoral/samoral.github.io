@@ -1,0 +1,160 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://code.jquery.com/jquery-3.1.1.js'></script>
+        <title>Alisha</title>
+    </head>
+    <body>
+    <style>
+        body {
+    background:#111;
+}
+#wrapper {
+    width:;
+}
+.Alisha {
+    font-size:20px;
+    text-align:center;
+    color:white;
+    
+}
+
+.too:after {
+    content:"🖋️";
+}
+button {
+position:relative ;
+     height:10px;
+}
+.h:after {
+    content:"🖋️";
+    
+}
+#book_cover {
+width:100%;
+height:100%;
+border:3px solid white;
+   position:absolute ; background:repeating-linear-gradient(red,#173459,black);
+   border-radius:1rem;
+   transform-origin:left ;
+   
+   animation-iteration-count:infinite ;
+  animation:open 20s ease-out 1.5s alternate 2;
+}
+@keyframes open {
+    to {
+    animation-timing-function:cubic-bezier(1,0,1,0);
+        transform:rotateY(-180deg);
+    }
+}
+#wrapper {
+width:200px;
+height:100%;
+border-radius:1rem;
+background:white;
+word-wrap:break-word;
+white-space:wrap;
+    display:flex ;
+    
+    
+    box-shadow:1px 2px 1px 2px red,2px 1px 2px 1px grey;
+}
+.h {
+word-wrap:break-all;
+text-align:center;
+margin-top:0;
+font-size:15px;
+    font-weight:lighter ;
+    margin-left:3px;
+    color:blue;
+}
+.container {
+top:15px;
+left:25%;
+position:absolute ;
+
+height:300px;
+width:200px;
+    transform:rotate(-10deg);
+}
+pre {
+color:white;
+    animation:d 2s alternate infinite ;
+}
+@keyframes d {
+    0%{
+    color:yellow;
+    }
+    30% {
+        color:red;
+    }
+    60% {
+        color:blue;
+    }
+100 {
+    color:gold;
+}
+}
+
+
+    </style>
+    <div class="container">
+    <div id="book_cover"><p class="to" align="center">To my best friend</p>
+        <pre>  
+        °       °
+       °   •  °   °
+      °     •     °
+      •           •
+        •       •
+          •    •
+             •
+             ♦ ♦</pre>
+    <pre class="Alisha">Alisha Khan</pre><hr></div>
+    <div id="wrapper">
+        <p class="h"></p>
+        
+        </div>
+        
+        </div>
+        
+        <script>
+            var text = "Dear Alisha \n \n   how are you feeling \n 🥺. I was saddened when I heard you were sick 🥺.\n How are you doing, be strong, visit the doctor and feel alright. \n I hope you get well soon. I am sorry I am not able to see you  Take this as a gift 💎 from me to you I await you to recover."
+            
+            var t = document.querySelector(".h")
+       
+        
+         var u = -1;
+    setTimeout( ()=>  {
+    setInterval(        
+    function v() {
+  u++;  
+
+ 
+ 
+t.textContent += text.charAt(u)
+},100)},5000);
+
+var i = -1
+var too = document.querySelector(".to")
+var to = "\n\n\nThanks for \nreading"
+setTimeout ( () => {
+setInterval (
+function h() {
+i++;
+too.innerHTML += to.charAt(i)
+},300);
+    $(".to").css("color","yellow")
+},35000)
+setTimeout( () => {
+$(".to").addClass("too")
+},35000)
+        </script>
+        
+        
+    </body>
+</html>
